@@ -39,7 +39,6 @@ public class TouchManager : MonoBehaviour
         {
             if (hit.transform.name.Contains("Sphere"))
             {
-                Debug.Log("event");
                 OnSphereClick?.Invoke(hit);
             }
         }

@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &39940217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -390,6 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &248164779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -537,6 +539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &261256951
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -613,26 +616,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416809148}
-  - component: {fileID: 416809147}
+  - component: {fileID: 416809149}
   m_Layer: 0
-  m_Name: LevelFailedHelper
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &416809147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416809146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65eb950695e986d448835c4ad7a22181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &416809148
 Transform:
   m_ObjectHideFlags: 0
@@ -648,6 +639,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416809149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416809146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a36ef2715deeb498c3bde518cf2515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &529065786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &741903784
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1598,6 +1602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &1091301406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1868,6 +1873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &1411269921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2284,6 +2290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &1591912129
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2729,6 +2736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &1969259871
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3010,6 +3018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
 --- !u!54 &2092406077
 Rigidbody:
   m_ObjectHideFlags: 0

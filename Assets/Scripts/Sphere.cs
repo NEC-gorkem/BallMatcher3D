@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[DefaultExecutionOrder(-1)]
+
 public class Sphere : MonoBehaviour
 {
     private TouchManager touchManager;
     private UIManager uIManager;
+    private LevelManager levelManager;
 
     [HideInInspector]
     public bool isSphereInAction;
@@ -24,6 +25,8 @@ public class Sphere : MonoBehaviour
     {
         uIManager = UIManager.Instance;
         touchManager = TouchManager.Instance;
+        levelManager = LevelManager.Instance;
+
         numberOfTheClickedColour = 0;
         speedOfTheSphere = 5f;
         isSphereInAction = false;
@@ -101,29 +104,18 @@ public class Sphere : MonoBehaviour
             if (tag == other.tag && numberOfTheClickedColour == 2)
             {
 
-
-                GameObject allSpheres = GameObject.Find("Spheres");
-                Transform transformOfTheParentShperes = allSpheres.transform;
-
-                Debug.Log(GameObject.Find("Spheres").transform.childCount);
                 Destroy(gameObject);
-                Debug.Log(GameObject.Find("Spheres").transform.childCount);
                 Destroy(other.gameObject);
-                Debug.Log(GameObject.Find("Spheres").transform.childCount);
 
-                ///////////////////////////////
-                // winning condition
-                if (transformOfTheParentShperes.childCount == 0)
-                {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                }
-                ///////////////////////////////
+                levelManager.DecrementTotalNumberOfBalls();
+                levelManager.DecrementTotalNumberOfBalls();
                 numberOfTheClickedColour = 0;
             }
             else if (tag == other.tag)
             {
                 Destroy(other.gameObject);
                 numberOfTheClickedColour--;
+                levelManager.DecrementTotalNumberOfBalls();
             }
         }
         ///////////////////////////////
@@ -131,7 +123,7 @@ public class Sphere : MonoBehaviour
         // losing condition
         if(tag != other.tag)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            levelManager.OppositeColourCollision();
         }
         ///////////////////////////////
     }
