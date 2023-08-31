@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4187169624551329763}
   - component: {fileID: 2516250820465777185}
   m_Layer: 0
-  m_Name: REDSPHERE
+  m_Name: REDSphere
   m_TagString: RED
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0

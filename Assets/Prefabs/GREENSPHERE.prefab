@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7323370854703379803}
   - component: {fileID: 364490649163375817}
   m_Layer: 0
-  m_Name: GREENSPHERE
+  m_Name: GREENSphere
   m_TagString: GREEN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

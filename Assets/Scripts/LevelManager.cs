@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[DefaultExecutionOrder(-1)]
+[DefaultExecutionOrder(-2)]
 public class LevelManager : MonoBehaviour
 {
 
     // singleton structure
     public static LevelManager Instance { get; private set; }
     private int totalNumberOfBalls;
+    private int currentLevel;
+
+
+    public delegate void OnChangeTheSceneDelegate(string nameOfTheScene);
+    public event OnChangeTheSceneDelegate OnChangeTheScene;
 
     private void Awake()
     {
+        currentLevel = 1;
         if (Instance == null)
         {
             Instance = this;
@@ -24,19 +30,29 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.activeSceneChanged -= OnActiveSceneChanged;
+    }
+
     private void Start()
     {
-        totalNumberOfBalls = GameObject.Find("Spheres").transform.childCount;
+        SceneManager.LoadScene("Level"+ currentLevel.ToString());
     }
 
     public void DecrementTotalNumberOfBalls()
     {
         totalNumberOfBalls--;
-        Debug.Log(totalNumberOfBalls);
         // winning condition
         if(totalNumberOfBalls == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            currentLevel++;
+            SceneManager.LoadScene("Level" + currentLevel.ToString());
         }
     }
 
@@ -44,5 +60,13 @@ public class LevelManager : MonoBehaviour
     public void OppositeColourCollision()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
+
+    private void OnActiveSceneChanged(Scene Previous, Scene Next)
+    {
+        totalNumberOfBalls = GameObject.Find("Spheres").transform.childCount;
+        OnChangeTheScene.Invoke(Next.name);
     }
 }

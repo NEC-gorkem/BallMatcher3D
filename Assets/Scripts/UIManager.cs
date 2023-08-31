@@ -1,12 +1,15 @@
 using TMPro;
 using UnityEngine;
 
-[DefaultExecutionOrder(-2)]
+[DefaultExecutionOrder(-1)]
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI speedIndicator;
-    
+    [SerializeField]
+    private TextMeshProUGUI LevelIndicator;
+
+    private LevelManager levelManager;
     
     public float normalSpeed;
     public float slowerSpeed;
@@ -32,8 +35,19 @@ public class UIManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        levelManager = LevelManager.Instance;
     }
 
+    private void OnEnable()
+    {
+        levelManager.OnChangeTheScene += CurrentLevelIndicator;
+    }
+
+    private void OnDisable()
+    {
+        levelManager.OnChangeTheScene -= CurrentLevelIndicator;
+    }
 
     public void ChangeItToNormalSpeed()
     {
@@ -49,6 +63,11 @@ public class UIManager : MonoBehaviour
     {
         OnChangeTheSphereSpeed?.Invoke(slowestSpeed);
         speedIndicator.text = "Slowest";
+    }
+
+    private void CurrentLevelIndicator(string currentLevel)
+    {
+        LevelIndicator.text = currentLevel;
     }
 
 }
