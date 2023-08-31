@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[DefaultExecutionOrder(-2)]
+[DefaultExecutionOrder(-3)]
 public class LevelManager : MonoBehaviour
 {
 
@@ -40,9 +38,11 @@ public class LevelManager : MonoBehaviour
         SceneManager.activeSceneChanged -= OnActiveSceneChanged;
     }
 
+
+    // Null ERROR BU YUZDEN GELIYOR !!!!!
     private void Start()
     {
-        SceneManager.LoadScene("Level"+ currentLevel.ToString());
+        //SceneManager.LoadScene("Level"+ currentLevel.ToString());
     }
 
     public void DecrementTotalNumberOfBalls()

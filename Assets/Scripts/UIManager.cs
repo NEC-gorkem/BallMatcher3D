@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-[DefaultExecutionOrder(-1)]
+[DefaultExecutionOrder(-2)]
 public class UIManager : MonoBehaviour
 {
     [SerializeField]

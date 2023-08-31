@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7843582304600019340}
   - component: {fileID: 7110405988865517868}
   - component: {fileID: 4305748164162786529}
+  - component: {fileID: 5430937737364125967}
   m_Layer: 0
   m_Name: BLUESphere
   m_TagString: BLUE
@@ -148,3 +149,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSphereInAction: 0
   isSpehereStationary: 0
+--- !u!114 &5430937737364125967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980248299112387724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f31c1acf9ac0040a4d374a6fd38005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

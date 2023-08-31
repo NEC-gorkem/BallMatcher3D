@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[DefaultExecutionOrder(-3)]
+[DefaultExecutionOrder(-4)]
 public class TouchManager : MonoBehaviour
 {
     // singleton structure

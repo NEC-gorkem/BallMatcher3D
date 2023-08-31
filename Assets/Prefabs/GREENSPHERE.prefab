@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5967480865009672031}
   - component: {fileID: 7323370854703379803}
   - component: {fileID: 364490649163375817}
+  - component: {fileID: -4364168798071278596}
   m_Layer: 0
   m_Name: GREENSphere
   m_TagString: GREEN
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSphereInAction: 0
+  isSpehereStationary: 0
+--- !u!114 &-4364168798071278596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6151326073699477063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f31c1acf9ac0040a4d374a6fd38005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

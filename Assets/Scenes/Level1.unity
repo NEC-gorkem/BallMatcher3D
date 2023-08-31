@@ -777,6 +777,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
+      propertyPath: isSphereAlreadyMoving
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7980248299112387724, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
       propertyPath: m_Name
       value: BLUESphere
@@ -1274,9 +1278,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedIndicator: {fileID: 944924107}
   LevelIndicator: {fileID: 721036162}
-  normalSpeed: 5
-  slowerSpeed: 2
-  slowestSpeed: 0.5
+  normalSpeed: 3
+  slowerSpeed: 1.5
+  slowestSpeed: 0.75
 --- !u!1 &1473075220
 GameObject:
   m_ObjectHideFlags: 0

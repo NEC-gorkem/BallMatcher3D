@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5639965993233793295}
   - component: {fileID: 4187169624551329763}
   - component: {fileID: 2516250820465777185}
+  - component: {fileID: -2220945233207733438}
   m_Layer: 0
   m_Name: PURPLESphere
   m_TagString: YELLOW
@@ -148,3 +149,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSphereInAction: 0
   isSpehereStationary: 0
+--- !u!114 &-2220945233207733438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8915209829899758711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f31c1acf9ac0040a4d374a6fd38005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
