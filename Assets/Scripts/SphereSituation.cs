@@ -17,6 +17,8 @@ public class SphereSituation : MonoBehaviour
     public bool isSphereInAction;
     [HideInInspector]
     public bool isSphereStationary;
+    [HideInInspector]
+    public Coroutine coroutineOfTheSphere;
 
     [SerializeField]
     public bool isSphereAlreadyMoving;
@@ -83,6 +85,18 @@ public class SphereSituation : MonoBehaviour
         nameOfTheClickedObject = newClickedName;
     }
 
+
+    /// <summary>
+    /// ClickedSphereName adjustments
+    /// </summary>
+    public Coroutine GetCoroutineOfTheSphere()
+    {
+        return coroutineOfTheSphere;
+    }
+    public void SetCoroutineOfTheSphere(Coroutine createdCoroutine)
+    {
+        coroutineOfTheSphere = createdCoroutine;
+    }
 
     /// <summary>
     /// When speed is adjusted bu using ui speed changes in sphere properties

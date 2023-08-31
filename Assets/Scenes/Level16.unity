@@ -131,6 +131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 370486988}
     m_Modifications:
+    - target: {fileID: 2182459340717018368, guid: 9a70638bf8a2d0c4494eff7d102910a4, type: 3}
+      propertyPath: verticalMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182459340717018368, guid: 9a70638bf8a2d0c4494eff7d102910a4, type: 3}
+      propertyPath: isSphereAlreadyMoving
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6445939580655378923, guid: 9a70638bf8a2d0c4494eff7d102910a4, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -778,12 +786,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
+      propertyPath: firstUp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
+      propertyPath: firstRight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
+      propertyPath: verticalMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
       propertyPath: horizontalMovement
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
       propertyPath: isSphereAlreadyMoving
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7980248299112387724, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
       propertyPath: m_Name
@@ -1782,6 +1802,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 370486988}
     m_Modifications:
+    - target: {fileID: 2182459340717018368, guid: 9a70638bf8a2d0c4494eff7d102910a4, type: 3}
+      propertyPath: horizontalMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182459340717018368, guid: 9a70638bf8a2d0c4494eff7d102910a4, type: 3}
+      propertyPath: isSphereAlreadyMoving
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6445939580655378923, guid: 9a70638bf8a2d0c4494eff7d102910a4, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1893,12 +1921,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
+      propertyPath: firstUp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
+      propertyPath: firstRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
       propertyPath: verticalMovement
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
+      propertyPath: horizontalMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430937737364125967, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
       propertyPath: isSphereAlreadyMoving
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7980248299112387724, guid: 51856eb7dd1ff794fb28c683ad865de4, type: 3}
       propertyPath: m_Name
