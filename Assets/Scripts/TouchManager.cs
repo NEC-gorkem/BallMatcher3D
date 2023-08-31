@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[DefaultExecutionOrder(-2)]
+[DefaultExecutionOrder(-3)]
 public class TouchManager : MonoBehaviour
 {
     // singleton structure
@@ -19,6 +19,7 @@ public class TouchManager : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 60;
         if(Instance == null)
         {
             Instance = this;
@@ -38,6 +39,7 @@ public class TouchManager : MonoBehaviour
         {
             if (hit.transform.name.Contains("Sphere"))
             {
+                Debug.Log("event");
                 OnSphereClick?.Invoke(hit);
             }
         }
