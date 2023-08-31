@@ -68,6 +68,7 @@ public class UIManager : MonoBehaviour
     private void CurrentLevelIndicator(string currentLevel)
     {
         LevelIndicator.text = currentLevel;
+        speedIndicator.text = "Normal";
     }
 
 }

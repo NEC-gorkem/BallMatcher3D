@@ -13,6 +13,9 @@ public class LevelManager : MonoBehaviour
 
     public delegate void OnChangeTheSceneDelegate(string nameOfTheScene);
     public event OnChangeTheSceneDelegate OnChangeTheScene;
+    
+    // public delegate void OnLevelFailedSceneDelegate();
+    // public event OnLevelFailedSceneDelegate OnLevelFailed;
 
     private void Awake()
     {
